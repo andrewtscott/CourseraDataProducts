@@ -42,11 +42,19 @@
 
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
-  <hgroup>
-    <h2>Overview and Why?</h2>
-  </hgroup>
   <article data-timings="">
-    <p>This application is a simple tool for calculating basic statistics about two of the most well known stock indexes in the United States.</p>
+    <style>
+  em {
+    font-style: italic;
+  }
+  strong {
+    font-weight: bold;
+  }
+</style>
+
+<h2>Overview and Why?</h2>
+
+<p>This application is a simple tool for calculating basic statistics about two of the most well known stock indexes in the United States.</p>
 
 <p>Once a stock index and date range are selected:</p>
 
@@ -76,7 +84,7 @@ Application Link: <a href="https://andrewts.shinyapps.io/IndexStats">https://and
 <li> <strong>Dow Jones</strong>: <a href="https://www.quandl.com/data/BCB/UDJIAD1-Dow-Jones-Industrial-Average">https://www.quandl.com/data/BCB/UDJIAD1-Dow-Jones-Industrial-Average</a></li>
 </ul>
 
-<p>The dataset currently consists of 1,504 observations between the two indexes. Here are some quick calculated information about each index&#39;s dataset.</p>
+<p>The dataset currently consists of 1,504 observations between the two indexes. Here are some quick calculated information about the dataset for each index.</p>
 
 <table><thead>
 <tr>
@@ -115,7 +123,16 @@ Application Link: <a href="https://andrewts.shinyapps.io/IndexStats">https://and
     <h2>What Calculations?</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>Besides the line plot the following statistics are calculated on-the-fly for each parameter set:</p>
+
+<ul>
+<li><strong>Days In Range</strong>: The number of records that are present for the parameters specified.</li>
+<li><strong>Average</strong>: The average closing value for the index.</li>
+<li><strong>Minimum</strong>: The lowest closing value for the index.</li>
+<li><strong>Maximum</strong>: The highest closing value for the index.</li>
+<li><strong>Percentage Change</strong>: The percentage change in closing value for an index between the start and end of the time period. Calculated using the following formula: <code>(last value - first value) / first value * 100</code></li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -125,7 +142,14 @@ Application Link: <a href="https://andrewts.shinyapps.io/IndexStats">https://and
     <h2>Why Use it?</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>Let me close with a few reasons why you should use IndexStats as a first stop for stock market index information needs:</p>
+
+<ul>
+<li><strong>Easy To Use</strong> - Get the answers you need in a few clicks.<br></li>
+<li><strong>Open Source</strong> - Pull down the code and extend it to your heart&#39;s content.<br></li>
+<li><strong>On-the-fly Visualization</strong> - See the trends behind the numbers.</li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -136,7 +160,7 @@ Application Link: <a href="https://andrewts.shinyapps.io/IndexStats">https://and
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Overview and Why?'>
+        data-slide=1 title='NA'>
          1
       </a>
     </li>
