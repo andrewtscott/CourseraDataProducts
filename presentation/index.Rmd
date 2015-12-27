@@ -11,23 +11,54 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Slide 2
+## Overview and Why?
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+This application is a simple tool for calculating basic statistics about two of the most well known stock indexes in the United States.
+
+Once a stock index and date range are selected:
+
+- A simple line plot of the index closing values is displayed.
+- Statistics are calculated and displayed about the behavior of the index closing values.
+
+All the code for this presentation and the application can be found at the github link below.
+
+GitHub Repository: https://github.com/andrewtscott/CourseraDataProducts  
+Application Link: https://andrewts.shinyapps.io/IndexStats
+
 
 --- 
 
-## Slide 3
+## Where's the data?
+
+The data used for this application was collected from datasets hosted on quandl.com
+
+-  **S&P 500**: https://www.quandl.com/data/YAHOO/INDEX_GSPC-S-P-500-Index
+-  **Dow Jones**: https://www.quandl.com/data/BCB/UDJIAD1-Dow-Jones-Industrial-Average
+
+```{r echo=FALSE}
+fn <- function(n) { format(n, digits = 2, nsmall=2, big.mark = ",") }
+
+IndexData <- read.csv("IndexData.csv")
+IndexData$date = as.Date(IndexData$date)
+
+DJ <- IndexData[IndexData$index == "DJIA", ]
+SP <- IndexData[IndexData$index == "SP", ]
+```
+
+The dataset currently consists of `r fn(nrow(IndexData))` observations between the two indexes. Here are some quick calculated information about each index's dataset.
+
+Index     | Earliest Date    | Latest Date      | Highest Day Closing     | Lowest Day Closing     | Average
+----------|------------------|------------------|-------------------------|------------------------|---------
+Dow Jones | `r min(DJ$date)` | `r max(DJ$date)` | `r fn(max(DJ$value))`   | `r fn(min(DJ$value))`  | `r fn(mean(DJ$value))`
+S&P 500   | `r min(SP$date)` | `r max(SP$date)` | `r fn(max(SP$value))`   | `r fn(min(SP$value))`  | `r fn(mean(SP$value))`
 
 ---
 
-## Slide 4
+## What Calculations?
 
 ---
 
-## Slide 5
+## Why Use it?
 
 
 

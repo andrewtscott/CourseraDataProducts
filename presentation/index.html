@@ -43,14 +43,22 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Overview and Why?</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <p>This application is a simple tool for calculating basic statistics about two of the most well known stock indexes in the United States.</p>
+
+<p>Once a stock index and date range are selected:</p>
+
+<ul>
+<li>A simple line plot of the index closing values is displayed.</li>
+<li>Statistics are calculated and displayed about the behavior of the index closing values.</li>
+</ul>
+
+<p>All the code for this presentation and the application can be found at the github link below.</p>
+
+<p>GitHub Repository: <a href="https://github.com/andrewtscott/CourseraDataProducts">https://github.com/andrewtscott/CourseraDataProducts</a><br>
+Application Link: <a href="https://andrewts.shinyapps.io/IndexStats">https://andrewts.shinyapps.io/IndexStats</a></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -58,17 +66,53 @@
 
 <slide class="" id="slide-2" style="background:;">
   <hgroup>
-    <h2>Slide 3</h2>
+    <h2>Where&#39;s the data?</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>The data used for this application was collected from datasets hosted on quandl.com</p>
+
+<ul>
+<li> <strong>S&amp;P 500</strong>: <a href="https://www.quandl.com/data/YAHOO/INDEX_GSPC-S-P-500-Index">https://www.quandl.com/data/YAHOO/INDEX_GSPC-S-P-500-Index</a></li>
+<li> <strong>Dow Jones</strong>: <a href="https://www.quandl.com/data/BCB/UDJIAD1-Dow-Jones-Industrial-Average">https://www.quandl.com/data/BCB/UDJIAD1-Dow-Jones-Industrial-Average</a></li>
+</ul>
+
+<p>The dataset currently consists of 1,504 observations between the two indexes. Here are some quick calculated information about each index&#39;s dataset.</p>
+
+<table><thead>
+<tr>
+<th>Index</th>
+<th>Earliest Date</th>
+<th>Latest Date</th>
+<th>Highest Day Closing</th>
+<th>Lowest Day Closing</th>
+<th>Average</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Dow Jones</td>
+<td>2013-01-02</td>
+<td>2015-12-24</td>
+<td>18,312.39</td>
+<td>13,328.85</td>
+<td>16,452.17</td>
+</tr>
+<tr>
+<td>S&amp;P 500</td>
+<td>2013-01-02</td>
+<td>2015-12-24</td>
+<td>2,130.82</td>
+<td>1,457.15</td>
+<td>1,877.78</td>
+</tr>
+</tbody></table>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Slide 4</h2>
+    <h2>What Calculations?</h2>
   </hgroup>
   <article data-timings="">
     
@@ -78,7 +122,7 @@
 
 <slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h2>Slide 5</h2>
+    <h2>Why Use it?</h2>
   </hgroup>
   <article data-timings="">
     
@@ -92,25 +136,25 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Slide 2'>
+        data-slide=1 title='Overview and Why?'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 3'>
+        data-slide=2 title='Where&#39;s the data?'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Slide 4'>
+        data-slide=3 title='What Calculations?'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Slide 5'>
+        data-slide=4 title='Why Use it?'>
          4
       </a>
     </li>

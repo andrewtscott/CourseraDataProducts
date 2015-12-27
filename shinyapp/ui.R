@@ -3,7 +3,7 @@ require(markdown)
 shinyUI(fluidPage(
   # Application title
   titlePanel("IndexStats"),
-  p("A tool for viewing statistics about stock market indexes over a selected time period. Please see the Documentation tab for more information."),
+  p("An easy tool for viewing stock market index statistics over a selected time period. Please see the Documentation tab for more information."),
   
   # Sidebar with a slider input for the number of bins
   sidebarLayout(
