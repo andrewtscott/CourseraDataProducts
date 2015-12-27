@@ -1,3 +1,5 @@
+require(markdown)
+
 shinyUI(fluidPage(
   # Application title
   titlePanel("IndexStats"),
