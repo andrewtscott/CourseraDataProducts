@@ -1,5 +1,5 @@
 ---
-title       : IndexStat
+title       : IndexStats
 subtitle    : An easy tool for Stock Market Index Analysis
 author      : Andrew Scott
 job         : 
