@@ -13,6 +13,8 @@ knit        : slidify::knit2slides
 <style>
   em {
     font-style: italic;
+    
+    
   }
   strong {
     font-weight: bold;
@@ -68,7 +70,7 @@ Besides the line plot the following statistics are calculated on-the-fly for eac
 
 ## Why Use it?
 
-Let me close with a few reasons why you should use IndexStats as a first stop for stock market index information needs:
+Let me close with a few reasons why you should use IndexStats as a first stop for stock market index information:
 
 - **Easy To Use** - Get the answers you need in a few clicks.  
 - **Open Source** - Pull down the code and extend it to your heart's content.  
