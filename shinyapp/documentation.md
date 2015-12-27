@@ -8,7 +8,7 @@ date range for analysis. This data was collected from the following links for al
 -  https://www.quandl.com/data/YAHOO/INDEX_GSPC-S-P-500-Index
 -  https://www.quandl.com/data/BCB/UDJIAD1-Dow-Jones-Industrial-Average
 
-You can find the sourcecode for the application at following github repository: https://github.com/andrewtscott/CourseraDataProducts
+You can find the sourcecode for the application at the following github repository: https://github.com/andrewtscott/CourseraDataProducts
 
 ### Parameters
 
