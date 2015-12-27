@@ -17,5 +17,6 @@ DJIA = Quandl("BCB/UDJIAD1", start_date="2013-01-01", end_date="2016-01-01") %>%
 
 data = rbind(SP500, DJIA)
 
-write.csv(data, file="IndexData.csv", row.names = FALSE)
+write.csv(data, file="./shinyapp/IndexData.csv", row.names = FALSE)
+write.csv(data, file="./presentation/IndexData.csv", row.names = FALSE)
 
